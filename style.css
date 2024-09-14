@@ -1,0 +1,161 @@
+body, html {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*HEADER*/
+
+.header {
+    width: 100%;
+    background: purple;
+    background: linear-gradient(90deg, #06165f 0%, #3c00bc 100%);
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    padding: 0 20px;
+    max-width: 1200px;    
+}
+
+@media screen and (min-width: 385px) {
+    .header__inner {
+        justify-content: space-between;
+        padding: 0 20px;
+        gap: 1rem;
+    }
+}
+
+.header__logo {
+    color: white;
+
+}
+
+@media screen and (min-width: 385px) {
+    .header__logo {
+        margin-top: 20px;
+    }
+}
+
+.header__btnGrp {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.header__button {
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: 0;
+}
+
+.header__button:hover {
+    cursor: pointer;
+    opacity: 0.75;
+}
+
+.header__button--submit {
+    background: orange;
+}
+
+.header__button--signIn {
+    background: green;
+    color: white;
+}
+
+/*GENERAL*/
+.mainContainer {
+    margin: auto;
+}
+
+/*SEARCH*/
+.search__wrapper {
+    position: relative;
+    max-width: 350px;
+    width: 100%;
+}
+
+.search {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 20px;
+    background-color: #e8eaf6;
+}
+
+.search__title {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.search__input {
+    padding: 8px 30px 8px 8px;
+    border-radius: 20px;
+    width: 100%;
+    border: 1px solid lightgrey;
+}
+
+.search__searchIcon {
+    position: absolute;
+    top: 5px;
+    right: -20px;
+}
+
+/*FAQ*/
+
+.faq {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 80px auto;
+    max-width: 1200px;
+}
+
+.faq__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    list-style-type: none;
+    padding: 20px;
+}
+
+.faq__list-item {
+    min-height: 8rem;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+    gap: 2rem;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+/*FOOTER*/
+
+.footer {
+    padding: 20px;
+    background: linear-gradient(90deg, #06165f 0%, #3c00bc 100%);
+}
+
+.footer__column {
+    flex-grow: 1;
+}
+
+.footer__content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    color: white;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
